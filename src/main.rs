@@ -12,7 +12,7 @@ use libflate::gzip::Decoder;
     long_about = None,
 )]
 struct Args {
-    #[clap(value_name = "VALUE", help = "RFC3548 base64 encoded string representing gzipped data.")]
+    #[clap(value_name = "VALUE", help = "RFC3548 base64 encoded string representing gzipped data. Specify \"-\" to read from stdin.")]
     input: String,
 }
 
